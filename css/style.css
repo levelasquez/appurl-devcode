@@ -92,3 +92,39 @@ ul, li {
     margin-top: 2em;
     border-radius: 2px;
 }
+
+.benefits {
+    margin: 1em 0;
+}
+
+.benefits__row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits__items__row {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {
+    .benefits__items__row {
+        flex-direction: row;
+    }
+    
+    .benefit {
+        padding: 1em;
+        flex: 1;
+    }
+}
+
+.benefits__link {
+    color: #3484E5;
+    border: 1px solid #3484E5;
+    padding: .5em;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.benefit__titulo {
+    color: #3484E5;
+}
