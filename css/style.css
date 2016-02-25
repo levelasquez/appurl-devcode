@@ -1,6 +1,11 @@
 ul, li {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -17,6 +22,14 @@ ul, li {
     justify-content: center;
 }
 
+.btn {
+    color: #3484E5;
+    border: 1px solid #3484E5;
+    padding: .5em;
+    border-radius: 2px;
+    text-align: center;
+}
+
 .menu {
     background-color: #2B2C30;
     padding: 1em 0;
@@ -24,6 +37,7 @@ ul, li {
 
 .menu__row {
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo__blue {
@@ -41,8 +55,17 @@ ul, li {
 @media screen and (min-width: 480px) {
     .menu__lista {
         display: block;
-        color: #fff;
     }
+}
+
+.menu__link {
+    color: #fff;
+}
+
+.active {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: .5em;
 }
 
 .menu__item {
@@ -91,6 +114,7 @@ ul, li {
     background: #3484E5;
     margin-top: 2em;
     border-radius: 2px;
+    color: #fff;
 }
 
 .benefits {
@@ -106,6 +130,10 @@ ul, li {
     flex-direction: column;
 }
 
+.benefit {
+    text-align: center;
+}
+
 @media screen and (min-width: 480px) {
     .benefits__items__row {
         flex-direction: row;
@@ -117,14 +145,73 @@ ul, li {
     }
 }
 
-.benefits__link {
+.benefit__titulo {
     color: #3484E5;
-    border: 1px solid #3484E5;
-    padding: .5em;
-    border-radius: 2px;
+}
+
+.benefits__img {
+    max-height: 300px;
+}
+
+@media screen and (min-width: 480px) {
+    .benefits__img{
+        max-height: 100%;
+    }
+}
+
+.info {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+.info__row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos {
+    margin: 2em 0;
+}
+
+.logo__row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo__item {
+    max-height: 30px;
+    margin: .5em;
+    flex-shrink: 0;
+}
+
+.footer {
+    background-color: #2B2E33;
+    padding: 2em 0;
+}
+
+.footer__row {
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
 }
 
-.benefit__titulo {
-    color: #3484E5;
+@media screen and (min-width: 480px) {
+    .footer__row {
+        flex-direction: row;
+    }
+}
+
+.footer__list {
+    flex: 1;
+}
+
+.footer__link {
+    padding: .5em 0;
+}
+
+.footer__list a {
+    color: #fff;
+    font-size: 12px;
 }
